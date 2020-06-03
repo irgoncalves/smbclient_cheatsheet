@@ -32,28 +32,28 @@ https://sharingsec.blogspot.com
  enum4linux -a \<target\>
  
  # enum4linux - General enumeration - authenticated session
- enum4linux -a <target> -u <user> -p <pass>
+ enum4linux -a \<target\> -u \<user\> -p \<pass\>
  
  # enum4linux - Users enumeration
- enum4linux -u <user> -p <pass> -U <target> 
+ enum4linux -u \<user\> -p \<pass\> -U \<target\>
  
  # enum4linux - Group and members enumeration 
- enum4linux -u <user> -p <pass> -G <target>
+ enum4linux -u \<user\> -p \<pass\> -G \<target\>
  
  # enum4linux - Password policy
- enum4linux -u <user> -p <pass> -P <target>
+ enum4linux -u \<user\> -p \<pass\> -P \<target\>
  
  # nmap - Enum Users
- nmap -p 445 --script smb-enum-users <target> --script-args smbuser=username,smbpass=password
+ nmap -p 445 --script smb-enum-users \<target\> --script-args smbuser=username,smbpass=password
  
  # nmap - Enum Groups
- nmap -p 445 --script smb-enum-groups <target> --script-args smbuser=username,smbpass=password
+ nmap -p 445 --script smb-enum-groups \<target\> --script-args smbuser=username,smbpass=password
  
  # nmap - Enum Shares
- nmap -p 445 --script smb-enum-shares <target> --script-args smbuser=username,smbpass=password
+ nmap -p 445 --script smb-enum-shares \<target\> --script-args smbuser=username,smbpass=password
  
  # nmap - OS Discovery
- nmap -p 445 --script smb-os-discovery <target>
+ nmap -p 445 --script smb-os-discovery \<target\>
  
  # nmap - SMB Vulnerabilities on Windows
  nmap -p 445 --script smb-vuln-ms06-025 target-IP <br>
