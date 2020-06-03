@@ -46,9 +46,9 @@ https://sharingsec.blogspot.com
  # nmap - Enum Users
  nmap -p 445 --script smb-enum-users \<target\> --script-args smbuser=username,smbpass=password,smbdomain=domain
  nmap -p 445 --script smb-enum-users \<target\> --script-args smbuser=username,smbhash=LM:NTLM,smbdomain=domain
- Samples:
+ <br>Samples:<br>
  nmap --script smb-enum-users.nse --script-args smbusername=User1,smbpass=Pass@1234,smbdomain=workstation -p445 192.168.1.10
- nmap --script smb-enum-users.nse --script-args smbusername=User1,smbhash=aad3b435b51404eeaad3b435b51404ee:C318D62C8B3CA508DD753DDA8CC74028,smbdomain=mydomain -p445 192.168.1.10
+ nmap --script smb-enum-users.nse --script-args smbusername=User1,smbhash=aad3b435b51404eeaad3b435b51404ee:C318D62C8B3CA508DD753DDA8CC74028,smbdomain=mydomain -p445 192.168.1.10<br>
  
  # nmap - Enum Groups
  nmap -p 445 --script smb-enum-groups \<target\> --script-args smbuser=username,smbpass=password,smbdomain=domain
