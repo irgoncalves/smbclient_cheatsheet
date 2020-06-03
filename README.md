@@ -1,7 +1,7 @@
 This is a list of useful commands/tricks using smbclient, enum4linux and nmap smb scripts - very useful on a pentesting
 https://sharingsec.blogspot.com
 
-# List shares on a machine using NULL Session
+ # List shares on a machine using NULL Session
  smbclient -L <target-IP>
  
  # List shares on a machine using a valid username + password
@@ -46,7 +46,7 @@ https://sharingsec.blogspot.com
  # nmap - Enum Users
  nmap -p 445 --script smb-enum-users \<target\> --script-args smbuser=username,smbpass=password,smbdomain=domain
  nmap -p 445 --script smb-enum-users \<target\> --script-args smbuser=username,smbhash=LM:NTLM,smbdomain=domain
- <br>Samples:<br>
+ <br/>Samples:<br/>
  nmap --script smb-enum-users.nse --script-args smbusername=User1,smbpass=Pass@1234,smbdomain=workstation -p445 192.168.1.10
  nmap --script smb-enum-users.nse --script-args smbusername=User1,smbhash=aad3b435b51404eeaad3b435b51404ee:C318D62C8B3CA508DD753DDA8CC74028,smbdomain=mydomain -p445 192.168.1.10<br>
  
