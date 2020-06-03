@@ -29,7 +29,7 @@ https://sharingsec.blogspot.com
  smbclient //<target>/<share$> -c 'rename current_file.txt new_file.txt' password -U username
  
  # enum4linux - General enumeration - anonymous session 
- enum4linux -a <target>
+ enum4linux -a \<target\>
  
  # enum4linux - General enumeration - authenticated session
  enum4linux -a <target> -u <user> -p <pass>
