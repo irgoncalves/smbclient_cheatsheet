@@ -5,28 +5,28 @@ https://sharingsec.blogspot.com
  smbclient -L <target-IP>
  
  # List shares on a machine using a valid username + password
- smbclient -L <target-IP> -U username%password
+ smbclient -L \<target-IP\> -U username%password
  
  # Connect to a valid share with username + password
- smbclient //<target>/<share$> -U username%password
+ smbclient //\<target\>/\<share$\> -U username%password
   
  # List files on a specific share
- smbclient //<target>/<share$> -c 'ls' password -U username
+ smbclient //\<target\>/\<share$\> -c 'ls' password -U username
  
  # List files on a specific share folder inside the share
- smbclient //<target>/<share$> -c 'cd folder; ls' password -U username
+ smbclient //\<target\>/\<share$\> -c 'cd folder; ls' password -U username
  
  # Download a file from a specific share folder
- smbclient //<target>/<share$> -c 'cd folder;get desired_file_name' password -U username
+ smbclient //\<target\>/\<share$\> -c 'cd folder;get desired_file_name' password -U username
   
  # Copy a file to a specific share folder
- smbclient //<target>/<share$> -c 'put /var/www/my_local_file.txt .\target_folder\target_file.txt' password -U username
+ smbclient //\<target\>/\<share$\> -c 'put /var/www/my_local_file.txt .\target_folder\target_file.txt' password -U username
  
  # Create a folder in a specific share folder
- smbclient //<target>/<share$> -c 'mkdir .\target_folder\new_folder' password -U username
+ smbclient //\<target\>/\<share$\> -c 'mkdir .\target_folder\new_folder' password -U username
  
  # Rename a file in a specific share folder
- smbclient //<target>/<share$> -c 'rename current_file.txt new_file.txt' password -U username
+ smbclient //\<target\>/\<share$\> -c 'rename current_file.txt new_file.txt' password -U username
  
  # enum4linux - General enumeration - anonymous session 
  enum4linux -a \<target\>
