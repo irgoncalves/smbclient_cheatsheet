@@ -69,6 +69,8 @@ https://sharingsec.blogspot.com
  nmap -p 445 --script smb-vuln-ms10-054 target-IP <br>
  nmap -p 445 --script smb-vuln-ms10-061 target-IP <br>
  nmap -p 445 --script smb-vuln-ms17-010 target-IP <br>
+ nmap -p 445 --script smb-vuln-cve-2017-7494 target-IP <br>
+ 
  -- Always check for updated list on https://nmap.org/nsedoc/scripts/
  
  # map - Brute Force Accounts (be aware of account lockout!)
